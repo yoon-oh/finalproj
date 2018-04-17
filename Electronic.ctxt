@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=Electronic
+comment1.params=itemName\ itemPrice\ purchfor\ numItem\ IDnum
+comment1.target=Electronic(java.lang.String,\ double,\ double,\ int,\ java.lang.String)
+comment2.params=
+comment2.target=Electronic()
+comment3.params=
+comment3.target=int\ getexpire()
+comment4.params=
+comment4.target=java.lang.String\ getLocation()
+numComments=5

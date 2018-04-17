@@ -1,0 +1,21 @@
+#BlueJ class context
+comment0.target=interfaceItem
+comment1.params=
+comment1.target=java.lang.String\ toString()
+comment2.params=
+comment2.target=java.lang.String\ getType()
+comment3.params=
+comment3.target=double\ getshelfPrice()
+comment4.params=
+comment4.target=double\ getPurchfor()
+comment5.params=
+comment5.target=java.lang.String\ getName()
+comment6.params=
+comment6.target=int\ getQuantity()
+comment7.params=
+comment7.target=java.lang.String\ getID()
+comment8.params=
+comment8.target=int\ getexpire()
+comment9.params=
+comment9.target=java.lang.String\ getLocation()
+numComments=10

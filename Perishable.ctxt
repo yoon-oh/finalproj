@@ -1,0 +1,17 @@
+#BlueJ class context
+comment0.target=Perishable
+comment1.params=itemName\ itemPrice\ purchfor\ numItem\ IDnum\ expire
+comment1.target=Perishable(java.lang.String,\ double,\ double,\ int,\ java.lang.String,\ int)
+comment2.params=
+comment2.target=Perishable()
+comment3.params=
+comment3.target=void\ getGuiPanel()
+comment4.params=contentPane
+comment4.target=int\ setGuiPanel(javax.swing.JPanel)
+comment5.params=
+comment5.target=java.lang.String\ getLocation()
+comment6.params=
+comment6.target=int\ getexpire()
+comment7.params=
+comment7.target=java.lang.String\ toString()
+numComments=8

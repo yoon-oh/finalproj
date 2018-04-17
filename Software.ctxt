@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.target=Software
+comment1.params=itemName\ itemPrice\ purchfor\ numItem\ IDnum\ link
+comment1.target=Software(java.lang.String,\ double,\ double,\ int,\ java.lang.String,\ java.lang.String)
+comment2.params=
+comment2.target=Software()
+comment3.params=
+comment3.target=void\ getGuiPanel()
+comment4.params=contentPane
+comment4.target=int\ setGuiPanel(javax.swing.JPanel)
+comment5.params=
+comment5.target=java.lang.String\ getLink()
+comment6.params=
+comment6.target=int\ getexpire()
+comment7.params=
+comment7.target=java.lang.String\ getLocation()
+comment8.params=
+comment8.target=java.lang.String\ toString()
+numComments=9

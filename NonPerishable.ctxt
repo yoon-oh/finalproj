@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=NonPerishable
+comment1.params=itemName\ itemPrice\ purchfor\ numItem\ IDnum
+comment1.target=NonPerishable(java.lang.String,\ double,\ double,\ int,\ java.lang.String)
+comment2.params=
+comment2.target=NonPerishable()
+comment3.params=
+comment3.target=java.lang.String\ getLocation()
+comment4.params=
+comment4.target=int\ getexpire()
+comment5.params=
+comment5.target=java.lang.String\ toString()
+numComments=6

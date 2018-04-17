@@ -1,0 +1,348 @@
+/**
+*Text genereted by Simple GUI Extension for BlueJ
+*/
+import javax.swing.UIManager.LookAndFeelInfo;
+import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.awt.event.KeyAdapter;
+import java.awt.event.KeyEvent;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
+import java.awt.event.MouseWheelEvent;
+import java.awt.event.MouseWheelListener;
+import javax.swing.border.Border;
+import javax.swing.*;
+
+
+public class GUI_project extends JFrame {
+
+    private JMenuBar menuBar;
+    private JButton add_button;
+    private JComboBox combobox1;
+    private JButton delete_button;
+    private JEditorPane editorpane1;
+    private JLabel label1;
+    private JButton modify_button;
+    //private JPanel panel2;
+    private JCheckBox rev_checkbox;
+    private JButton search_button;
+    private JButton sort_button;
+    private JTextField textfield1;
+    private JTextField textfield2;
+
+    //Constructor 
+    public GUI_project(){
+
+        this.setTitle("GUI_project");
+        this.setSize(935,563);
+        //menu generate method
+        generateMenu();
+        this.setJMenuBar(menuBar);
+
+        //pane with null layout
+        JPanel contentPane = new JPanel(null);
+        contentPane.setPreferredSize(new Dimension(935,563));
+        contentPane.setBackground(new Color(192,192,192));
+
+
+        add_button = new JButton();
+        add_button.setBounds(60,115,90,35);
+        add_button.setBackground(new Color(214,217,223));
+        add_button.setForeground(new Color(0,0,0));
+        add_button.setEnabled(true);
+        add_button.setFont(new Font("sansserif",0,12));
+        add_button.setText("Add");
+        add_button.setVisible(true);
+        //Set methods for mouse events
+        //Call defined methods
+        add_button.addMouseListener(new MouseAdapter() {
+            public void mouseClicked(MouseEvent evt) {
+                add_button_event(evt);
+            }
+        });
+
+
+        combobox1 = new JComboBox();
+        combobox1.setBounds(174,70,90,35);
+        combobox1.setBackground(new Color(214,217,223));
+        combobox1.setForeground(new Color(0,0,0));
+        combobox1.setEnabled(true);
+        combobox1.setFont(new Font("sansserif",0,12));
+        combobox1.setVisible(true);
+
+        delete_button = new JButton();
+        delete_button.setBounds(173,115,90,35);
+        delete_button.setBackground(new Color(214,217,223));
+        delete_button.setForeground(new Color(0,0,0));
+        delete_button.setEnabled(true);
+        delete_button.setFont(new Font("sansserif",0,12));
+        delete_button.setText("Delete");
+        delete_button.setVisible(true);
+        //Set methods for mouse events
+        //Call defined methods
+        delete_button.addMouseListener(new MouseAdapter() {
+            public void mouseClicked(MouseEvent evt) {
+                delete_button_event(evt);
+            }
+        });
+
+
+        editorpane1 = new JEditorPane();
+        editorpane1.setBounds(58,182,716,255);
+        editorpane1.setBackground(new Color(214,217,223));
+        editorpane1.setForeground(new Color(0,0,0));
+        editorpane1.setEnabled(true);
+        editorpane1.setFont(new Font("sansserif",0,12));
+        editorpane1.setText("JEditorPane");
+        editorpane1.setBorder(BorderFactory.createBevelBorder(1));
+        editorpane1.setVisible(true);
+
+        label1 = new JLabel();
+        label1.setBounds(58,148,90,35);
+        label1.setBackground(new Color(214,217,223));
+        label1.setForeground(new Color(0,0,0));
+        label1.setEnabled(true);
+        label1.setFont(new Font("sansserif",0,12));
+        label1.setText("Inventory");
+        label1.setVisible(true);
+
+        modify_button = new JButton();
+        modify_button.setBounds(286,115,90,35);
+        modify_button.setBackground(new Color(214,217,223));
+        modify_button.setForeground(new Color(0,0,0));
+        modify_button.setEnabled(true);
+        modify_button.setFont(new Font("sansserif",0,12));
+        modify_button.setText("Modify");
+        modify_button.setVisible(true);
+        //Set methods for mouse events
+        //Call defined methods
+        modify_button.addMouseListener(new MouseAdapter() {
+            public void mouseClicked(MouseEvent evt) {
+                modify_button_event(evt);
+            }
+        });
+
+
+        // panel2 = new JPanel(null);
+        // panel2.setBorder(BorderFactory.createEtchedBorder(1));
+        // panel2.setBounds(11,55,150,100);
+        // panel2.setBackground(new Color(214,217,223));
+        // panel2.setForeground(new Color(0,0,0));
+        // panel2.setEnabled(true);
+        // panel2.setFont(new Font("sansserif",0,12));
+        // panel2.setVisible(true);
+
+        rev_checkbox = new JCheckBox();
+        rev_checkbox.setBounds(169,28,120,35);
+        rev_checkbox.setBackground(new Color(214,217,223));
+        rev_checkbox.setForeground(new Color(0,0,0));
+        rev_checkbox.setEnabled(true);
+        rev_checkbox.setFont(new Font("sansserif",0,12));
+        rev_checkbox.setText("reverse order");
+        rev_checkbox.setVisible(true);
+
+        search_button = new JButton();
+        search_button.setBounds(60,71,90,35);
+        search_button.setBackground(new Color(214,217,223));
+        search_button.setForeground(new Color(0,0,0));
+        search_button.setEnabled(true);
+        search_button.setFont(new Font("sansserif",0,12));
+        search_button.setText("search");
+        search_button.setVisible(true);
+        //Set methods for mouse events
+        //Call defined methods
+        search_button.addMouseListener(new MouseAdapter() {
+            public void mouseClicked(MouseEvent evt) {
+                search_button_event(evt);
+            }
+        });
+
+
+        sort_button = new JButton();
+        sort_button.setBounds(60,26,90,35);
+        sort_button.setBackground(new Color(214,217,223));
+        sort_button.setForeground(new Color(0,0,0));
+        sort_button.setEnabled(true);
+        sort_button.setFont(new Font("sansserif",0,12));
+        sort_button.setText("sort");
+        sort_button.setVisible(true);
+        //Set methods for mouse events
+        //Call defined methods
+        sort_button.addMouseListener(new MouseAdapter() {
+            public void mouseClicked(MouseEvent evt) {
+                sort_button_event(evt);
+            }
+        });
+
+
+        textfield1 = new JTextField();
+        textfield1.setBounds(58,467,720,40);
+        textfield1.setBackground(new Color(255,255,255));
+        textfield1.setForeground(new Color(0,0,0));
+        textfield1.setEnabled(true);
+        textfield1.setFont(new Font("sansserif",0,12));
+        textfield1.setText("JTextField");
+        textfield1.setVisible(true);
+
+        textfield2 = new JTextField();
+        textfield2.setBounds(286,70,90,35);
+        textfield2.setBackground(new Color(255,255,255));
+        textfield2.setForeground(new Color(0,0,0));
+        textfield2.setEnabled(true);
+        textfield2.setFont(new Font("sansserif",0,12));
+        textfield2.setText("JTextField");
+        textfield2.setVisible(true);
+
+        //adding components to contentPane panel
+        contentPane.add(add_button);
+        contentPane.add(combobox1);
+        contentPane.add(delete_button);
+        contentPane.add(editorpane1);
+        contentPane.add(label1);
+        contentPane.add(modify_button);
+        //contentPane.add(panel2);
+		contentPane.add(search_button);
+		contentPane.add(sort_button);
+		contentPane.add(textfield1);
+		contentPane.add(textfield2);
+
+		//adding panel to JFrame and seting of window position and close operation
+		this.add(contentPane);
+		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		this.setLocationRelativeTo(null);
+		this.pack();
+		this.setVisible(true);
+	}
+
+	//Method mouseClicked for add_button
+	private void add_button_event (MouseEvent evt) {
+			//TODO
+	}
+
+	//Method mouseClicked for delete_button
+	private void delete_button_event (MouseEvent evt) {
+			//TODO
+	}
+
+	//Method mouseClicked for modify_button
+	private void modify_button_event (MouseEvent evt) {
+			//TODO
+	}
+
+	//Method mouseClicked for search_button
+	private void search_button_event (MouseEvent evt) {
+			//TODO
+	}
+
+	//Method mouseClicked for sort_button
+	private void sort_button_event (MouseEvent evt) {
+			//TODO
+	}
+
+	//method for generate menu
+	public void generateMenu(){
+		menuBar = new JMenuBar();
+
+		JMenu file = new JMenu("File");
+		JMenu tools = new JMenu("Tools");
+		JMenu help = new JMenu("Help");
+
+		JMenuItem open = new JMenuItem("Open   ");
+		JMenuItem save = new JMenuItem("Save   ");
+		JMenuItem exit = new JMenuItem("Exit   ");
+		JMenuItem preferences = new JMenuItem("Preferences   ");
+		JMenuItem about = new JMenuItem("About   ");
+
+		//Setings action for menu item
+		//Call defined method
+		open.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent evt) {
+				open_menu(evt);
+			}
+		});
+
+		//Setings action for menu item
+		//Call defined method
+		save.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent evt) {
+				save_menu(evt);
+			}
+		});
+
+		//Setings action for menu item
+		//Call defined method
+		exit.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent evt) {
+				exit_menu(evt);
+			}
+		});
+
+		//Setings action for menu item
+		//Call defined method
+		preferences.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent evt) {
+				pref_menu(evt);
+			}
+		});
+
+		//Setings action for menu item
+		//Call defined method
+		about.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent evt) {
+				about_menu(evt);
+			}
+		});
+
+
+		file.add(open);
+		file.add(save);
+		file.addSeparator();
+		file.add(exit);
+		tools.add(preferences);
+		help.add(about);
+
+		menuBar.add(file);
+		menuBar.add(tools);
+		menuBar.add(help);
+	}
+	//Method for Open from menuFile 
+	private void open_menu (ActionEvent evt) {
+			//TODO
+	}
+
+	//Method for Save from menuFile 
+	private void save_menu (ActionEvent evt) {
+			//TODO
+	}
+
+	//Method for Exit from menuFile 
+	private void exit_menu (ActionEvent evt) {
+			//TODO
+	}
+
+	//Method for Preferences from menuTools 
+	private void pref_menu (ActionEvent evt) {
+			//TODO
+	}
+
+	//Method for About from menuHelp 
+	private void about_menu (ActionEvent evt) {
+			//TODO
+	}
+
+
+
+
+	 public static void main(String[] args){
+	     Inventory run = new Inventory();
+        run.print();
+		System.setProperty("swing.defaultlaf", "com.sun.java.swing.plaf.nimbus.NimbusLookAndFeel");
+		javax.swing.SwingUtilities.invokeLater(new Runnable() {
+			public void run() {
+				new GUI_project();
+			}
+		});
+	}
+
+}

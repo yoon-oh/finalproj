@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=Tops
+comment1.params=itemName\ itemPrice\ purchfor\ numItem\ IDnum\ size
+comment1.target=Tops(java.lang.String,\ double,\ double,\ int,\ java.lang.String,\ java.lang.String)
+comment2.params=
+comment2.target=Tops()
+comment3.params=
+comment3.target=java.lang.String\ getLocation()
+comment4.params=
+comment4.target=int\ getexpire()
+comment5.params=
+comment5.target=java.lang.String\ toString()
+numComments=6

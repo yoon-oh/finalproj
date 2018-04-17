@@ -1,0 +1,21 @@
+#BlueJ class context
+comment0.target=Inventory
+comment1.params=
+comment1.target=Inventory()
+comment2.params=i
+comment2.target=void\ removeFromInventory(int)
+comment3.params=type
+comment3.target=void\ addToInventory(int)
+comment4.params=
+comment4.target=java.lang.String\ toString()
+comment5.params=
+comment5.target=java.lang.String[]\ print_to_string_array()
+comment6.params=reverse\ field_index
+comment6.target=void\ quickSort(boolean,\ int)
+comment7.params=start\ end\ reverse\ field_index
+comment7.target=void\ doQuickSort(int,\ int,\ boolean,\ int)
+comment8.params=start\ end\ reverse\ field_index
+comment8.target=int\ partition(int,\ int,\ boolean,\ int)
+comment9.params=i\ j\ field_index\ reverse
+comment9.target=java.lang.Boolean\ compareItem(int,\ int,\ int,\ java.lang.Boolean)
+numComments=10
